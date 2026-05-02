@@ -16,6 +16,13 @@
             Console.WriteLine(etiquet);
             Console.WriteLine(etiquet2);
             Console.WriteLine();
+            Console.WriteLine("==== PRUEBA PROBLEMA 3 =====");
+            Problema3 prob3 = new Problema3();
+            Product product = new Product();
+            product.SetDescription("Libro");
+            String comparacion = prob3.CompararCopias(25, product);
+            Console.WriteLine(comparacion);
+            Console.WriteLine();
         }
     }
 }
