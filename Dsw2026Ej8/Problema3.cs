@@ -12,7 +12,7 @@ namespace Dsw2026Ej8
             copyValue = copyValue + 10;
 
             Product copyProduct = product;
-            copyProduct.ModificarDescripcion("Producto generico");
+            copyProduct.ModificarDescripcion("Descripcion modificada");
 
             return $"{originalValue} - {copyValue} - {product.GetDescription()}";
         }

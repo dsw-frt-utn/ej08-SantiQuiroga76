@@ -23,6 +23,17 @@
             String comparacion = prob3.CompararCopias(25, product);
             Console.WriteLine(comparacion);
             Console.WriteLine();
+            Console.WriteLine("==== PRUEBA PROBLEMA 4 =====");
+            Problema4 prob4 = new Problema4();
+            double promedio = prob4.CalcularPromedio(null, 5, 7);
+            double promedio2 = prob4.CalcularPromedio(null, null, null);
+            double promedio3 = prob4.CalcularPromedio(2, 5, 17);
+            double promedio4 = prob4.CalcularPromedio(-15, null, 27);
+            Console.WriteLine(promedio);
+            Console.WriteLine(promedio2);
+            Console.WriteLine(promedio3);
+            Console.WriteLine(promedio4);
+            Console.WriteLine();
         }
     }
 }
