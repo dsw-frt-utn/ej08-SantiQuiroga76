@@ -49,6 +49,15 @@
             decimal resultNormal = prob5.ObtenerImporteFinal(ventaNormal);
             Console.WriteLine($"Total: ${resultNormal}");
             Console.WriteLine();
+            Console.WriteLine("==== PRUEBA PROBLEMA 6 =====");
+            Problema6 prob6 = new Problema6();
+            string code = prob6.NormalizarCodigoProducto("  fkskj 1284 kfjioe   ");
+            string code2 = prob6.NormalizarCodigoProducto(" ab 123 x ");
+            string code3 = prob6.NormalizarCodigoProducto(null);
+            Console.WriteLine(code);
+            Console.WriteLine(code2);
+            Console.WriteLine(code3);
+            Console.WriteLine();
         }
     }
 }
