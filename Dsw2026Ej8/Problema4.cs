@@ -30,14 +30,14 @@ namespace Dsw2026Ej8
                 sumaTotal += nota3.Value;
                 cantNotasValidas++;
             }
-            //if(sumaTotal == 0)
-            //{
-            //    return 0;
-            //}
+            if(sumaTotal == 0)
+            {
+                return 0;
+            }
 
-            //return sumaTotal / cantNotasValidas;
+            return sumaTotal / cantNotasValidas;
 
-            return (cantNotasValidas == 0) ? 0 : sumaTotal / cantNotasValidas;
+            //return (cantNotasValidas == 0) ? 0 : sumaTotal / cantNotasValidas;
         }
     }
 }

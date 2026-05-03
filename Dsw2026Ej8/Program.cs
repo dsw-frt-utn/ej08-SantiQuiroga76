@@ -34,6 +34,21 @@
             Console.WriteLine(promedio3);
             Console.WriteLine(promedio4);
             Console.WriteLine();
+            Console.WriteLine("==== PRUEBA PROBLEMA 5 =====");
+            Problema5 prob5 = new Problema5();
+            Sale ventaMinorista = new RetailSale();
+            ventaMinorista.ImporteBase = 1500;
+            Sale ventaMayorista = new WholesaleSale();
+            ventaMayorista.ImporteBase = 1500;
+            Sale ventaNormal = new Sale();
+            ventaNormal.ImporteBase = 1500;
+            decimal resultMinorista = prob5.ObtenerImporteFinal(ventaMinorista);
+            Console.WriteLine($"Total s/ desc: ${resultMinorista}");
+            decimal resultMayorista = prob5.ObtenerImporteFinal(ventaMayorista);
+            Console.WriteLine($"Total c/ 10% desc: ${resultMayorista}");
+            decimal resultNormal = prob5.ObtenerImporteFinal(ventaNormal);
+            Console.WriteLine($"Total: ${resultNormal}");
+            Console.WriteLine();
         }
     }
 }
